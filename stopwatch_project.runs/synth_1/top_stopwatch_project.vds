@@ -1,0 +1,453 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Apr 11 16:58:51 2019
+# Process ID: 15376
+# Current directory: W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1
+# Command line: vivado.exe -log top_stopwatch_project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_stopwatch_project.tcl
+# Log file: W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/top_stopwatch_project.vds
+# Journal file: W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_stopwatch_project.tcl -notrace
+Command: synth_design -top top_stopwatch_project -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11316 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 345.043 ; gain = 134.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_stopwatch_project' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'rate10thousandth' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/realtime/rate10thousandth_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'rate10thousandth' (2#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/realtime/rate10thousandth_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (12) of module 'rate10thousandth' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:57]
+INFO: [Synth 8-638] synthesizing module 'clk2Hz' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/clk2Hz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk2Hz' (3#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/clk2Hz.v:23]
+INFO: [Synth 8-638] synthesizing module 'up_down_count_4bit_behavioural' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/up_down_count_4bit_behavioural.v:23]
+INFO: [Synth 8-256] done synthesizing module 'up_down_count_4bit_behavioural' (4#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/up_down_count_4bit_behavioural.v:23]
+INFO: [Synth 8-638] synthesizing module 'PmodENC_OG' [W:/Desktop/PMODENC_Original/PmodENC_original.v:25]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [W:/Desktop/PMODENC_Original/Debouncer_original.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (5#1) [W:/Desktop/PMODENC_Original/Debouncer_original.v:20]
+INFO: [Synth 8-638] synthesizing module 'Encoder' [W:/Desktop/PMODENC_Original/Encoder_original.v:21]
+WARNING: [Synth 8-151] case item 32'b00000000000000000101001000110011 is unreachable [W:/Desktop/PMODENC_Original/Encoder_original.v:107]
+INFO: [Synth 8-256] done synthesizing module 'Encoder' (6#1) [W:/Desktop/PMODENC_Original/Encoder_original.v:21]
+WARNING: [Synth 8-689] width (1) of port connection 'LED' does not match port width (2) of module 'Encoder' [W:/Desktop/PMODENC_Original/PmodENC_original.v:67]
+INFO: [Synth 8-256] done synthesizing module 'PmodENC_OG' (7#1) [W:/Desktop/PMODENC_Original/PmodENC_original.v:25]
+WARNING: [Synth 8-689] width (1) of port connection 'JA' does not match port width (4) of module 'clk2Hz' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:111]
+WARNING: [Synth 8-689] width (4) of port connection 'reset' does not match port width (1) of module 'clk2Hz' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:111]
+INFO: [Synth 8-638] synthesizing module 'refreshrate' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/realtime/refreshrate_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'refreshrate' (8#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/realtime/refreshrate_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (16) of module 'refreshrate' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:142]
+INFO: [Synth 8-638] synthesizing module 'bcdto7segdisplay' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/bcdto7segdisplay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcdto7segdisplay' (9#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/bcdto7segdisplay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top_stopwatch_project' (10#1) [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:23]
+WARNING: [Synth 8-3331] design clk2Hz has unconnected port JA[2]
+WARNING: [Synth 8-3331] design clk2Hz has unconnected port JA[1]
+WARNING: [Synth 8-3331] design clk2Hz has unconnected port JA[0]
+WARNING: [Synth 8-3331] design PmodENC_OG has unconnected port JA[2]
+WARNING: [Synth 8-3331] design up_down_count_4bit_behavioural has unconnected port JA[2]
+WARNING: [Synth 8-3331] design up_down_count_4bit_behavioural has unconnected port JA[1]
+WARNING: [Synth 8-3331] design up_down_count_4bit_behavioural has unconnected port JA[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 381.387 ; gain = 170.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 381.387 ; gain = 170.543
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'beginningoftime' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:56]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'rate10thousandth' instantiated as 'rate_at_tenthousandthofasec' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:57]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'refreshrate' instantiated as 'f5' [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.srcs/sources_1/new/stopwatch_onetenth.v:142]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp/clk_wiz_0_in_context.xdc] for cell 'beginningoftime'
+Finished Parsing XDC File [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp/clk_wiz_0_in_context.xdc] for cell 'beginningoftime'
+Parsing XDC File [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp_2/refreshrate_in_context.xdc] for cell 'f5'
+Finished Parsing XDC File [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp_2/refreshrate_in_context.xdc] for cell 'f5'
+Parsing XDC File [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp_3/rate10thousandth_in_context.xdc] for cell 'rate_at_tenthousandthofasec'
+Finished Parsing XDC File [W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp_3/rate10thousandth_in_context.xdc] for cell 'rate_at_tenthousandthofasec'
+Parsing XDC File [W:/Desktop/ELEC 3500 LABS/lab_sources/lab9_2016/lab9_3_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [W:/Desktop/ELEC 3500 LABS/lab_sources/lab9_2016/lab9_3_1/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [W:/Desktop/ELEC 3500 LABS/lab_sources/lab9_2016/lab9_3_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_stopwatch_project_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_stopwatch_project_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 699.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/.Xil/Vivado-15376-ME4166-07/dcp/clk_wiz_0_in_context.xdc}, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "thresh" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "thresh" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [W:/Desktop/PMODENC_Original/Encoder_original.v:71]
+INFO: [Synth 8-802] inferred FSM for state register 'curState_reg' in module 'Encoder'
+INFO: [Synth 8-5545] ROM "LED" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "signal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                        000000001 | 01101001011001000110110001100101
+                 iSTATE0 |                        000000010 | 00000000000000000101001000110001
+                 iSTATE1 |                        000000100 | 00000000000000000101001000110010
+                 iSTATE2 |                        000001000 | 00000000000000000101001000110011
+                 iSTATE3 |                        000010000 | 00000000011000010110010001100100
+                 iSTATE4 |                        000100000 | 00000000000000000100110000110001
+                 iSTATE5 |                        001000000 | 00000000000000000100110000110010
+                 iSTATE6 |                        010000000 | 00000000000000000100110000110011
+                 iSTATE7 |                        100000000 | 00000000011100110111010101100010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curState_reg' using encoding 'one-hot' in module 'Encoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc2'
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc3'
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc4'
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc5'
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc6'
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc7'
+INFO: [Synth 8-223] decloning instance 'enc1' (PmodENC_OG) to 'enc8'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 17    
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   9 Input     31 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   3 Input     15 Bit        Muxes := 2     
+	  24 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 78    
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 74    
+	   3 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_stopwatch_project 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+Module clk2Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module up_down_count_4bit_behavioural 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+Module Debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   9 Input     31 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   3 Input     15 Bit        Muxes := 2     
+	  24 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design clk2Hz has unconnected port JA[2]
+WARNING: [Synth 8-3331] design clk2Hz has unconnected port JA[1]
+WARNING: [Synth 8-3331] design clk2Hz has unconnected port JA[0]
+WARNING: [Synth 8-3331] design PmodENC_OG has unconnected port JA[2]
+WARNING: [Synth 8-3331] design up_down_count_4bit_behavioural has unconnected port JA[2]
+WARNING: [Synth 8-3331] design up_down_count_4bit_behavioural has unconnected port JA[1]
+WARNING: [Synth 8-3331] design up_down_count_4bit_behavioural has unconnected port JA[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (on8/thresh_reg) is unused and will be removed from module top_stopwatch_project.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module top_stopwatch_project.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'beginningoftime/clk_out1' to pin 'beginningoftime/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |rate10thousandth |         1|
+|3     |refreshrate      |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_wiz_0        |     1|
+|2     |rate10thousandth |     1|
+|3     |refreshrate      |     1|
+|4     |BUFG             |     1|
+|5     |CARRY4           |    82|
+|6     |LUT1             |   195|
+|7     |LUT2             |   175|
+|8     |LUT3             |    86|
+|9     |LUT4             |   107|
+|10    |LUT5             |    58|
+|11    |LUT6             |   146|
+|12    |MUXF7            |    17|
+|13    |FDRE             |   217|
+|14    |FDSE             |     1|
+|15    |IBUF             |     8|
+|16    |OBUF             |    18|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------------------------+------+
+|      |Instance         |Module                           |Cells |
++------+-----------------+---------------------------------+------+
+|1     |top              |                                 |  1142|
+|2     |  enc1           |PmodENC_OG                       |   136|
+|3     |    OG_Debouncer |Debouncer                        |    25|
+|4     |    OG_Encoder   |Encoder                          |   111|
+|5     |  forReadyLED    |clk2Hz                           |   174|
+|6     |  forbutton      |clk2Hz_0                         |   141|
+|7     |  on1            |up_down_count_4bit_behavioural   |    42|
+|8     |  on2            |up_down_count_4bit_behavioural_1 |    39|
+|9     |  on3            |up_down_count_4bit_behavioural_2 |    33|
+|10    |  on4            |up_down_count_4bit_behavioural_3 |    33|
+|11    |  on5            |up_down_count_4bit_behavioural_4 |    33|
+|12    |  on6            |up_down_count_4bit_behavioural_5 |    41|
+|13    |  on7            |up_down_count_4bit_behavioural_6 |    34|
+|14    |  on8            |up_down_count_4bit_behavioural_7 |    26|
++------+-----------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 699.363 ; gain = 488.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 699.363 ; gain = 109.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 699.363 ; gain = 488.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 699.363 ; gain = 430.211
+INFO: [Common 17-1381] The checkpoint 'W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/top_stopwatch_project.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 699.363 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 16:59:50 2019...

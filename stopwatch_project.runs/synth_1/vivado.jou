@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Apr 11 16:58:51 2019
+# Process ID: 15376
+# Current directory: W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1
+# Command line: vivado.exe -log top_stopwatch_project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_stopwatch_project.tcl
+# Log file: W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1/top_stopwatch_project.vds
+# Journal file: W:/Desktop/ELEC 3500 LABS/stopwatch_project/stopwatch_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_stopwatch_project.tcl -notrace

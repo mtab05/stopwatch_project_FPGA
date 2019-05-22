@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Mar 28 20:16:05 2019
+# Process ID: 9568
+# Current directory: W:/Desktop/ELEC 3500 LABS/lab9_3_1/lab9_3_1.runs/refreshrate_synth_1
+# Command line: vivado.exe -log refreshrate.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source refreshrate.tcl
+# Log file: W:/Desktop/ELEC 3500 LABS/lab9_3_1/lab9_3_1.runs/refreshrate_synth_1/refreshrate.vds
+# Journal file: W:/Desktop/ELEC 3500 LABS/lab9_3_1/lab9_3_1.runs/refreshrate_synth_1\vivado.jou
+#-----------------------------------------------------------
+source refreshrate.tcl -notrace

@@ -1,0 +1,90 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Apr 11 17:00:49 2019
+| Host         : ME4166-07 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_stopwatch_project_control_sets_placed.rpt
+| Design       : top_stopwatch_project
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    80 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           24 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             150 |           37 |
+| Yes          | No                    | No                     |              34 |           25 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              28 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+------------------+----------------+
+|                        Clock Signal                       |       Enable Signal       |                                   Set/Reset Signal                                  | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+------------------+----------------+
+|  beginningoftime/inst/clk_out1                            | forReadyLED/p_0_in        | forReadyLED/Q10_in                                                                  |                1 |              1 |
+|  beginningoftime/inst/clk_out1                            | enc1/OG_Debouncer/Aout    |                                                                                     |                1 |              1 |
+|  beginningoftime/inst/clk_out1                            | enc1/OG_Debouncer/Bout    |                                                                                     |                1 |              1 |
+|  clk2HZ_BUFG                                              |                           |                                                                                     |                2 |              2 |
+|  beginningoftime/inst/clk_out1                            | on7/sec_num[3]_i_1__5_n_0 |                                                                                     |                2 |              4 |
+|  beginningoftime/inst/clk_out1                            | on8/sec_num[3]_i_1__6_n_0 |                                                                                     |                3 |              4 |
+|  beginningoftime/inst/clk_out1                            | on1/sec_num[3]_i_1_n_0    |                                                                                     |                3 |              4 |
+|  beginningoftime/inst/clk_out1                            | on4/E[0]                  |                                                                                     |                4 |              4 |
+|  beginningoftime/inst/clk_out1                            | on6/sec_num[3]_i_1__4_n_0 |                                                                                     |                3 |              4 |
+|  beginningoftime/inst/clk_out1                            | on3/E[0]                  |                                                                                     |                2 |              4 |
+|  beginningoftime/inst/clk_out1                            | on1/E[0]                  |                                                                                     |                3 |              4 |
+|  beginningoftime/inst/clk_out1                            | on2/E[0]                  |                                                                                     |                3 |              4 |
+|  clk2HZ_BUFG                                              | signal                    | signal[7]_i_1_n_0                                                                   |                1 |              6 |
+|  beginningoftime/inst/clk_out1                            |                           | enc1/OG_Debouncer/sclk[6]_i_1_n_0                                                   |                2 |              6 |
+|  beginningoftime/inst/clk_out1                            | JA_IBUF[3]                | enc1/OG_Encoder/curState                                                            |                8 |              9 |
+|  beginningoftime/inst/clk_out1                            | enable                    | rate_at_tenthousandthofasec/U0/i_synth/i_baseblox.i_baseblox_counter/clear_count__0 |                3 |             12 |
+|  f5/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0_BUFG |                           |                                                                                     |                6 |             15 |
+|  beginningoftime/inst/clk_out1                            |                           | f5/U0/i_synth/i_baseblox.i_baseblox_counter/count_to_reached__0                     |                4 |             16 |
+|  beginningoftime/inst/clk_out1                            |                           |                                                                                     |               16 |             19 |
+|  clk2HZ_BUFG                                              |                           | countbtn_reg[0]_i_1_n_1                                                             |                8 |             32 |
+|  beginningoftime/inst/clk_out1                            |                           | forbutton/count1_carry__2_n_0                                                       |                9 |             32 |
+|  beginningoftime/inst/clk_out1                            |                           | forReadyLED/Q10_in                                                                  |                6 |             32 |
+|  f5/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0_BUFG |                           | clear                                                                               |                8 |             32 |
++-----------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     3 |
+| 2      |                     1 |
+| 4      |                     8 |
+| 6      |                     2 |
+| 9      |                     1 |
+| 12     |                     1 |
+| 15     |                     1 |
+| 16+    |                     6 |
++--------+-----------------------+
+
+
