@@ -1,0 +1,1 @@
+refreshrate.vhd,vhdl,xil_defaultlib,../../../../lab9_3_1.srcs/sources_1/ip/refreshrate/sim/refreshrate.vhd,
